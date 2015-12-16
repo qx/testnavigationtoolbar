@@ -21,13 +21,13 @@
                                 <rect key="frame" x="221" y="279" width="158" height="42"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loaded by FirstViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A5M-7J-77L">
                                 <rect key="frame" x="203" y="329" width="195" height="17"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="38q-Be-DB9">
@@ -66,26 +66,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Second View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="zEq-FU-wV5">
-                                <rect key="frame" x="195" y="279" width="210" height="42"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Loaded by SecondViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NDk-cv-Gan">
-                                <rect key="frame" x="192" y="329" width="216" height="17"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2WI-cI-suf">
+                                <rect key="frame" x="277" y="285" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="GUF-8V-2fx" kind="show" id="eCi-gC-kl1"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="NDk-cv-Gan" firstAttribute="top" secondItem="zEq-FU-wV5" secondAttribute="bottom" constant="8" symbolic="YES" id="Day-4N-Vmt"/>
-                            <constraint firstItem="NDk-cv-Gan" firstAttribute="centerX" secondItem="zEq-FU-wV5" secondAttribute="centerX" id="JgO-Fn-dHn"/>
-                            <constraint firstAttribute="centerX" secondItem="zEq-FU-wV5" secondAttribute="centerX" id="qqM-NS-xev"/>
-                            <constraint firstAttribute="centerY" secondItem="zEq-FU-wV5" secondAttribute="centerY" id="qzY-Ky-pLD"/>
+                            <constraint firstItem="2WI-cI-suf" firstAttribute="centerY" secondItem="QS5-Rx-YEW" secondAttribute="centerY" id="0ez-TV-Uv6"/>
+                            <constraint firstItem="2WI-cI-suf" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="6cj-Jb-iaU"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Second" image="second" id="cPa-gy-q4n"/>
@@ -129,45 +121,37 @@
                                 <rect key="frame" x="221" y="279" width="158" height="42"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loaded by FirstViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yTf-PE-D5w">
                                 <rect key="frame" x="203" y="329" width="195" height="17"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eek-Wl-fT0">
-                                <rect key="frame" x="277" y="354" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                                <rect key="frame" x="285" y="354" width="30" height="30"/>
+                                <state key="normal" title="fire"/>
                                 <connections>
                                     <action selector="fireone:" destination="Nfy-BH-Mhd" eventType="touchUpInside" id="4ht-zS-sae"/>
                                 </connections>
                             </button>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r61-HN-Bag">
-                                <rect key="frame" x="0.0" y="556" width="600" height="44"/>
-                                <items>
-                                    <barButtonItem title="Item" id="CP3-5a-l0Z"/>
-                                    <barButtonItem title="Item" id="kvQ-GL-u3e"/>
-                                </items>
-                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="UTP-7o-IXE" firstAttribute="top" secondItem="r61-HN-Bag" secondAttribute="bottom" id="60E-Gx-WDi"/>
                             <constraint firstItem="eek-Wl-fT0" firstAttribute="centerX" secondItem="yTf-PE-D5w" secondAttribute="centerX" id="CqE-Vr-4bE"/>
-                            <constraint firstItem="r61-HN-Bag" firstAttribute="leading" secondItem="wF3-f5-NQT" secondAttribute="leading" id="ZTI-um-7YW"/>
                             <constraint firstItem="yTf-PE-D5w" firstAttribute="top" secondItem="sQP-HU-HcH" secondAttribute="bottom" constant="8" symbolic="YES" id="a1J-n8-zhn"/>
                             <constraint firstAttribute="centerY" secondItem="sQP-HU-HcH" secondAttribute="centerY" id="dft-oh-h0s"/>
                             <constraint firstItem="yTf-PE-D5w" firstAttribute="centerX" secondItem="sQP-HU-HcH" secondAttribute="centerX" id="frR-mL-9ds"/>
-                            <constraint firstItem="r61-HN-Bag" firstAttribute="centerX" secondItem="eek-Wl-fT0" secondAttribute="centerX" id="h76-yJ-js4"/>
                             <constraint firstItem="eek-Wl-fT0" firstAttribute="top" secondItem="sQP-HU-HcH" secondAttribute="bottom" constant="33" id="i7c-Od-mtd"/>
                             <constraint firstAttribute="centerX" secondItem="sQP-HU-HcH" secondAttribute="centerX" id="qnv-70-95j"/>
                         </constraints>
                     </view>
+                    <toolbarItems>
+                        <barButtonItem title="Item" id="m2d-Mb-X6b"/>
+                    </toolbarItems>
                     <navigationItem key="navigationItem" id="rqV-5x-WPn"/>
-                    <nil key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WKw-Ft-Ay9" sceneMemberID="firstResponder"/>
             </objects>
@@ -191,6 +175,46 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ump-V2-Xzz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1397" y="-320"/>
+        </scene>
+        <!--Second-->
+        <scene sceneID="LvN-ar-zLl">
+            <objects>
+                <viewController id="GUF-8V-2fx" customClass="SecondViewController" customModule="testNavintab" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="IYY-Gy-SOm"/>
+                        <viewControllerLayoutGuide type="bottom" id="4bP-gx-3Jd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="XuO-ly-kl0">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Second View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="MIB-ki-EBf">
+                                <rect key="frame" x="195" y="279" width="210" height="42"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Loaded by SecondViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aot-6B-sIU">
+                                <rect key="frame" x="192" y="329" width="216" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="MIB-ki-EBf" secondAttribute="centerX" id="OVc-Uq-Oks"/>
+                            <constraint firstItem="Aot-6B-sIU" firstAttribute="top" secondItem="MIB-ki-EBf" secondAttribute="bottom" constant="8" symbolic="YES" id="dP4-8G-LmH"/>
+                            <constraint firstAttribute="centerY" secondItem="MIB-ki-EBf" secondAttribute="centerY" id="jdV-SX-Kew"/>
+                            <constraint firstItem="Aot-6B-sIU" firstAttribute="centerX" secondItem="MIB-ki-EBf" secondAttribute="centerX" id="zWe-Nt-n3D"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Second" image="second" id="Y2X-Cb-34f"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RNm-dS-O8b" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1363" y="360"/>
         </scene>
     </scenes>
     <resources>
