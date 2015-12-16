@@ -138,16 +138,31 @@
                                     <action selector="fireone:" destination="Nfy-BH-Mhd" eventType="touchUpInside" id="4ht-zS-sae"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="m7V-c7-AKC">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="m7V-c7-AKC">
                                 <rect key="frame" x="20" y="202" width="240" height="128"/>
                             </imageView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xJq-El-cpV">
+                                <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                                <items>
+                                    <barButtonItem title="library" id="m2d-Mb-X6b">
+                                        <connections>
+                                            <action selector="photolibrary:" destination="Nfy-BH-Mhd" id="RQl-aQ-JE4"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="kNF-YL-gud"/>
+                                    <barButtonItem title="Item" id="Npc-lH-UgA"/>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="xJq-El-cpV" firstAttribute="centerX" secondItem="wF3-f5-NQT" secondAttribute="centerX" id="8j4-J8-kNd"/>
                             <constraint firstItem="eek-Wl-fT0" firstAttribute="centerX" secondItem="yTf-PE-D5w" secondAttribute="centerX" id="CqE-Vr-4bE"/>
+                            <constraint firstItem="xJq-El-cpV" firstAttribute="leading" secondItem="wF3-f5-NQT" secondAttribute="leading" id="Oc6-Kb-4yD"/>
                             <constraint firstItem="yTf-PE-D5w" firstAttribute="top" secondItem="sQP-HU-HcH" secondAttribute="bottom" constant="8" symbolic="YES" id="a1J-n8-zhn"/>
                             <constraint firstAttribute="centerY" secondItem="sQP-HU-HcH" secondAttribute="centerY" id="dft-oh-h0s"/>
                             <constraint firstItem="yTf-PE-D5w" firstAttribute="centerX" secondItem="sQP-HU-HcH" secondAttribute="centerX" id="frR-mL-9ds"/>
+                            <constraint firstItem="UTP-7o-IXE" firstAttribute="top" secondItem="xJq-El-cpV" secondAttribute="bottom" id="hZn-My-ec3"/>
                             <constraint firstItem="eek-Wl-fT0" firstAttribute="top" secondItem="sQP-HU-HcH" secondAttribute="bottom" constant="33" id="i7c-Od-mtd"/>
                             <constraint firstItem="sQP-HU-HcH" firstAttribute="leading" secondItem="m7V-c7-AKC" secondAttribute="trailing" constant="25" id="iAm-ZP-yla"/>
                             <constraint firstAttribute="centerX" secondItem="sQP-HU-HcH" secondAttribute="centerX" id="qnv-70-95j"/>
@@ -156,19 +171,12 @@
                             <constraint firstItem="m7V-c7-AKC" firstAttribute="top" secondItem="Os8-i5-FF5" secondAttribute="bottom" constant="138" id="yMY-D7-ciO"/>
                         </constraints>
                     </view>
-                    <toolbarItems>
-                        <barButtonItem title="library" id="m2d-Mb-X6b">
-                            <connections>
-                                <action selector="photolibrary:" destination="Nfy-BH-Mhd" id="RQl-aQ-JE4"/>
-                            </connections>
-                        </barButtonItem>
-                        <barButtonItem style="plain" systemItem="flexibleSpace" id="kNF-YL-gud"/>
-                        <barButtonItem title="Item" id="Npc-lH-UgA"/>
-                    </toolbarItems>
+                    <toolbarItems/>
                     <navigationItem key="navigationItem" id="rqV-5x-WPn"/>
-                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="imageuploadBg" destination="m7V-c7-AKC" id="Eie-d6-6S2"/>
+                        <outlet property="mytoolbar" destination="xJq-El-cpV" id="3x8-mA-IJc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WKw-Ft-Ay9" sceneMemberID="firstResponder"/>

@@ -61,12 +61,18 @@ extension UITabBarController {
     }
 }
 class FireViewController: UIViewController,UIImagePickerControllerDelegate, UINavigationControllerDelegate  {
-    var shouldShowToolBar: Bool = true
+    var shouldShowToolBar: Bool = false
     var shouldHideTabBar: Bool = true
     @IBOutlet weak var imageuploadBg: UIImageView!
     
+    @IBOutlet weak var mytoolbar: UIToolbar!
     var imagePicker = UIImagePickerController()
+ 
     
+    func imagePickerControllerDidCancel(picker: UIImagePickerController) {
+//        UIApplication.sharedApplication().setStatusBarHidden(true, withAnimation: nil)
+       picker.dismissViewControllerAnimated(true, completion: nil)
+    }
     func imagePickerController(picker: UIImagePickerController, didFinishPickingImage image: UIImage, editingInfo: [String:AnyObject]?) {
         self.dismissViewControllerAnimated(true, completion: {
             () -> Void in
@@ -193,46 +199,47 @@ class FireViewController: UIViewController,UIImagePickerControllerDelegate, UINa
     override func viewWillDisappear(animated: Bool) {
         super.viewWillDisappear(animated)
         //invisialbe custom bottom,visible main bottom bar
-        
+        print("self.tabBarController:\(self.tabBarController?.tabBarIsVisible())")
         resetBar(animated)
     }
     private func resetBar(animated:Bool){
-        if let nav = self.navigationController {
-            if shouldShowToolBar {
-                nav.setToolbarHidden(true, animated: animated)
-            } else {
-                nav.setToolbarHidden(false, animated: animated)
-                
-            }
-        }
-        if let tabar = self.tabBarController {
-            if shouldHideTabBar {
-                tabar.setTabBarVisible(true, animated: true)
-            } else {
-                tabar.setTabBarVisible(false, animated: true)
-                
-            }
-        }
+//        if let nav = self.navigationController {
+//            if shouldShowToolBar {
+//                nav.setToolbarHidden(true, animated: animated)
+//            } else {
+//                nav.setToolbarHidden(false, animated: animated)
+//                
+//            }
+//        }
+//        if let tabar = self.tabBarController {
+//            if shouldHideTabBar {
+//                tabar.setTabBarVisible(true, animated: true)
+//            } else {
+//                tabar.setTabBarVisible(false, animated: true)
+//                
+//            }
+//        }
         
     }
     private func setupBar(animated:Bool){
-        if let tabar = self.tabBarController {
-            if shouldHideTabBar {
-                tabar.setTabBarVisible(false, animated: true)
-            } else {
-                tabar.setTabBarVisible(true, animated: true)
-                
-            }
-        }
-        if let nav = self.navigationController {
-            if shouldShowToolBar {
-                
-                nav.setToolbarHidden(false, animated: animated)
-            } else {
-                nav.setToolbarHidden(true, animated: animated)
-                
-            }
-        }
+//        if let tabar = self.tabBarController {
+//            if shouldHideTabBar {
+//                tabar.setTabBarVisible(false, animated: true)
+//            } else {
+//                tabar.setTabBarVisible(true, animated: true)
+//                
+//            }
+//        }
+//        if let nav = self.navigationController {
+//            if shouldShowToolBar {
+//                
+//                nav.setToolbarHidden(false, animated: animated)
+//            } else {
+//                nav.setToolbarHidden(true, animated: animated)
+//                
+//            }
+//        }
+        
         
     }
 }
