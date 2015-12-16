@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "FireViewController.viewDidLoad() -&gt; ():FireViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.navigationController?.toolbar">
+            </PersistentString>
+            <PersistentString
+               value = "self.tabBarController">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "FireViewController.viewWillAppear(Bool) -&gt; ():FireViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "tabar">
+            </PersistentString>
+            <PersistentString
+               value = "self.navigationController">
+            </PersistentString>
+            <PersistentString
+               value = "self.navigationController?.parentViewController">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "SecondDetailViewController.viewWillAppear(Bool) -&gt; ():SecondDetailViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.navigationController">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

@@ -16,6 +16,7 @@
 		4F40C2681C210E9600C099B9 /* testNavintabTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F40C2671C210E9600C099B9 /* testNavintabTests.swift */; };
 		4F40C2731C210E9600C099B9 /* testNavintabUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F40C2721C210E9600C099B9 /* testNavintabUITests.swift */; };
 		4F40C2811C2111EF00C099B9 /* FireViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F40C2801C2111EF00C099B9 /* FireViewController.swift */; };
+		4FB829131C211A7500C46B9C /* SecondDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB829121C211A7500C46B9C /* SecondDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		4F40C2721C210E9600C099B9 /* testNavintabUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testNavintabUITests.swift; sourceTree = "<group>"; };
 		4F40C2741C210E9600C099B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4F40C2801C2111EF00C099B9 /* FireViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FireViewController.swift; sourceTree = "<group>"; };
+		4FB829121C211A7500C46B9C /* SecondDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				4F40C25B1C210E9600C099B9 /* LaunchScreen.storyboard */,
 				4F40C25E1C210E9600C099B9 /* Info.plist */,
 				4F40C2801C2111EF00C099B9 /* FireViewController.swift */,
+				4FB829121C211A7500C46B9C /* SecondDetailViewController.swift */,
 			);
 			path = testNavintab;
 			sourceTree = "<group>";
@@ -262,6 +265,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FB829131C211A7500C46B9C /* SecondDetailViewController.swift in Sources */,
 				4F40C2811C2111EF00C099B9 /* FireViewController.swift in Sources */,
 				4F40C2551C210E9600C099B9 /* SecondViewController.swift in Sources */,
 				4F40C2511C210E9600C099B9 /* AppDelegate.swift in Sources */,

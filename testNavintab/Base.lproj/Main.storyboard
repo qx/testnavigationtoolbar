@@ -70,7 +70,7 @@
                                 <rect key="frame" x="277" y="285" width="46" height="30"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
-                                    <segue destination="GUF-8V-2fx" kind="show" id="eCi-gC-kl1"/>
+                                    <action selector="showSecondDetail:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="GYe-vK-GdL"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -176,10 +176,10 @@
             </objects>
             <point key="canvasLocation" x="1397" y="-320"/>
         </scene>
-        <!--Second-->
+        <!--Second Detail View Controller-->
         <scene sceneID="LvN-ar-zLl">
             <objects>
-                <viewController id="GUF-8V-2fx" customClass="SecondViewController" customModule="testNavintab" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SecondDetailViewController" id="GUF-8V-2fx" customClass="SecondDetailViewController" customModule="testNavintab" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="IYY-Gy-SOm"/>
                         <viewControllerLayoutGuide type="bottom" id="4bP-gx-3Jd"/>
@@ -188,8 +188,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Second View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="MIB-ki-EBf">
-                                <rect key="frame" x="195" y="279" width="210" height="42"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Second detail View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="MIB-ki-EBf">
+                                <rect key="frame" x="147" y="279" width="306" height="42"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -210,9 +210,30 @@
                             <constraint firstItem="Aot-6B-sIU" firstAttribute="centerX" secondItem="MIB-ki-EBf" secondAttribute="centerX" id="zWe-Nt-n3D"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Second" image="second" id="Y2X-Cb-34f"/>
+                    <toolbarItems>
+                        <barButtonItem title="Item" id="Rt6-za-Xvj"/>
+                    </toolbarItems>
+                    <navigationItem key="navigationItem" id="NYj-di-4HO"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RNm-dS-O8b" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2175" y="360"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="NUK-8O-Jca">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="iM9-iD-OlC" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ix8-ox-861">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="GUF-8V-2fx" kind="relationship" relationship="rootViewController" id="GCq-jW-mfd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zy0-QK-HqL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1363" y="360"/>
         </scene>
