@@ -71,18 +71,23 @@ class FireViewController: UIViewController {
     }
     override func viewWillAppear(animated: Bool) {
         print("\(self.navigationController?.toolbar.hidden)")
-//        self.navigationController?.setToolbarHidden(false, animated: true)
-        
         if let tabar = self.tabBarController {
-            tabar.setTabBarVisible(true, animated: true)
+            //            tabar.setTabBarVisible(true, animated: true)
+            tabar.setTabBarVisible(false, animated: true)
         }
+        self.navigationController?.setToolbarHidden(false, animated: true)
+        
+      
 //        if let tabar2 = self.navigationController?.parentViewController?.tabBarController {
 //            tabar2.setTabBarVisible(true, animated: true)
 //        }
     }
     override func viewWillDisappear(animated: Bool) {
         self.navigationController?.setToolbarHidden(true, animated: true)
-
+        if let tabar = self.tabBarController {
+            //            tabar.setTabBarVisible(true, animated: true)
+            tabar.setTabBarVisible(true, animated: true)
+        }
     }
     
     override func didReceiveMemoryWarning() {
